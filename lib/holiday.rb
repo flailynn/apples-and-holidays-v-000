@@ -80,7 +80,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   return_array = []
   holiday_hash.each do |season, hash_with_holidays|
-    reutrn_array = hash_with_holidays.select do |holiday, items_array|
+    return_array = hash_with_holidays.select do |holiday, items_array|
       binding.pry
       if items_array.include?("BBQ")
         holiday
