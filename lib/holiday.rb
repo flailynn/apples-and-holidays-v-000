@@ -80,4 +80,5 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_hash.each do |season, hash_with_holidays|
     hash_with_holidays.key(/BBQ/)
+  end
 end
