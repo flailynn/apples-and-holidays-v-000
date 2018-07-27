@@ -81,12 +81,12 @@ def all_holidays_with_bbq(holiday_hash)
   return_array = []
   holiday_hash.each do |season, hash_with_holidays|
     return_array = hash_with_holidays.select do |holiday, items_array|
-      
+
       if items_array.include?("BBQ")
         holiday
       end
     end
-    
+
   end
   return_array
 end
